@@ -4,11 +4,13 @@
 __author__ = 'Ruben Ricaurte <ricaurtef@gmail.com>'
 
 
-import requests
 from argparse import ArgumentParser
+from os import getenv
+
+import requests
 
 
-__APP_ID = '2953ee8e1417c8af5d69472180800126'
+__APP_ID = getenv('OWM_API_KEY')
 
 
 def args():
