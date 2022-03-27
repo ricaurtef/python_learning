@@ -1,0 +1,51 @@
+---
+# Document 1.
+
+message: Hello, world!
+a number: 129804
+a scientific notation: 1e + 4
+a float: 100.000
+an integer: -5.6
+flag: false
+not flag: true
+an image: !!binary |
+  R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+python tuple: !!python/tuple [10, 1]
+not a number: !!str 0.00035
+
+
+---
+# Document 2
+
+message: Message of document two
+simple list: [1, 2, 3, four, five, "with quotes"]
+nested list:
+  - item 1
+  - item 2
+  -
+  - one
+  - two
+  - three
+  - four
+
+# Lists can alos be stored as keys.
+
+This:
+  is a:
+    nested_map:
+      key: value
+
+repeated text: &my_text This text need not be written again
+an anchor: *my_text
+
+# We can reference the maps too.
+
+person: &person
+  age: 10
+
+# All members below are of the same age.
+
+member 1:
+  <<: *person
+  name: Dave
+...

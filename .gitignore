@@ -1,0 +1,5 @@
+Pipfile*
+*.zip
+*.tgz
+__pycache__
+.DS_Store

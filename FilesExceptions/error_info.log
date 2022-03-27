@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "./error_example.py", line 22, in main
+    spam()
+  File "./error_example.py", line 11, in spam
+    bacon()
+  File "./error_example.py", line 16, in bacon
+    raise Exception('This is the error message.')
+Exception: This is the error message.
